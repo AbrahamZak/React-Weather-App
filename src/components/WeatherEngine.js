@@ -16,7 +16,7 @@ const WeatherEngine = ({location}) => {
   //Get data from API based on query and set the weather
   const getWeather = async(q) => {
     const apiRes = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&appid=1775d51d3e8458b665930f2e4acd22d3`
+      `https://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&appid=1775d51d3e8458b665930f2e4acd22d3`
       );
     const restJSON = await apiRes.json();
     setWeather({
